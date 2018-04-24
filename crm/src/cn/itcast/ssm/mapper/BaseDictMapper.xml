@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- namespace名称空间 sql隔离 -->
+<mapper namespace="cn.itcast.ssm.mapper.BaseDictMapper">
+
+ <select id="findByTypeCode" parameterType="string" resultType="baseDict">
+  	select * from base_dict where dict_type_code= #{typeCode} 
+ </select>
+
+</mapper>
